@@ -1,13 +1,18 @@
-//import Leftbar from "./components/leftbar/Leftbar";
+import Leftbar from "./components/Leftbar/Leftbar";
 import Navbar from "./components/Navbar/Navbar";
-//import Rightbar from "./components/rightbar/Rightbar";
-//import Update from "./components/update/Update";
 import "./App.css";
+import Rightbar from "./components/Rightbar/Rightbar";
+import Update from "./components/Update/Update";
 
 const App = () => {
   return (
     <>
       <Navbar />
+      <div className="container">
+        <Leftbar />
+        <Update/>
+        <Rightbar/>
+      </div>
     </>
   );
 };
